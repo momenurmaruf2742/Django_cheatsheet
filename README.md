@@ -13,7 +13,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 - --->
 # Django_cheatsheet
-this cheatsheet for Django beginners
+## This cheatsheet for Django beginners
 
 
 
@@ -22,50 +22,50 @@ this cheatsheet for Django beginners
 
 
 ### Hi there,This Is [Maruf](https://momenurmaruf2742.github.io/) 👋
-A passionate Software Developer 🚀 and Free writer ✍.
-
-What is Django?
+#### A passionate Software Developer 🚀 and Free writer ✍.
+## 
+## What is Django?
 Python-based web framework used for rapid development.
 
-Installing Django + Setup
+## Installing Django + Setup
 
 pip install django
 
-
-Creating a project
-The below command creates a new project
+# 
+## Creating a project
+### The below command creates a new project
 
 django-admin startproject projectName
 
 
-Starting a server
-The below command starts the development server.
+## Starting a server
+### The below command starts the development server.
 
 python  manage.py  runserver
 
 
-Django MVT
-Django follows MVT(Model, View, Template) architecture.
+## Django MVT 
+### Django follows MVT(Model, View, Template) architecture.
 
-Sample Django Model
-The model represents the schema of the database.
+## Sample Django Model
+### The model represents the schema of the database.
 
 from  django.db  import  models
 
 class Product(models.Model): //Product is the name of our model product_id=models.AutoField
 
 
-Sample views.py
-View decides what data gets delivered to the template.
+## Sample views.py
+### View decides what data gets delivered to the template.
 
 from django.http import HttpResponse
  
 def index(request):
-return  HttpResponse(''Django  CodeWithHarry  Cheatsheet'')
+return  HttpResponse(''Django  Momenur Islam  Cheatsheet'')
 
 
-Sample HTML Template
-A sample .html file that contains HTML, CSS and Javascript.
+## Sample HTML Template
+### A sample .html file that contains HTML, CSS and Javascript.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +73,7 @@ A sample .html file that contains HTML, CSS and Javascript.
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>CodeWithHarry  Cheatsheet</title>
+<title>MomenurIslam  Cheatsheet</title>
 </head>
 <body>
 <h1>This  is  a  sample  template  file.</h1>
@@ -81,25 +81,25 @@ A sample .html file that contains HTML, CSS and Javascript.
 </html>
 
 
-Views in Django
-Sample Function-Based Views
+## Views in Django
+### Sample Function-Based Views
 A python function that takes a web request and returns a web response.
 from django.http import HttpResponse def index(request):
 return  HttpResponse(''This  is  a  function  based  view.')
 
 
-Sample Class-Based Views
-Django's class-based views provide an object-oriented (OO) way of organizing your view code.
+## Sample Class-Based Views
+### Django's class-based views provide an object-oriented (OO) way of organizing your view code.
 
 from django.views import View
 
 class SimpleClassBasedView(View): def get(self, request):
-... # code to process a GET request
+code to process a GET request
  
-URLs in Django
-set of URL patterns to be matched against the requested URL.
+## URLs in Django
+### set of URL patterns to be matched against the requested URL.
 
-Sample urls.py file
+#### Sample urls.py file
 
 from django.contrib import admin from django.urls import path
 from . import views
@@ -112,26 +112,26 @@ path('about/',  views.about,  name='about'),
 ]
 
 
-Forms in Django
-Similar to HTML forms but are created by Django using the form field.
+## Forms in Django
+### Similar to HTML forms but are created by Django using the form field.
 
-Sample Django form
+#### Sample Django form
 from django import  forms # creating a form
 class  SampleForm(forms.Form):
 Name = forms.CharField()
 description = forms.CharField()
 
 
-Apps in Django
-Apps in Django are like independent modules for different functionalities.
+## Apps in Django
+### Apps in Django are like independent modules for different functionalities.
 
-Creating an app
+#### Creating an app
 
 python  manage.py  startapp  AppName
 
 
-Listing app in the settings.py
-After creating an app, we need to list the app name in INSTALLED_APPS
+##### Listing app in the settings.py
+##### After creating an app, we need to list the app name in INSTALLED_APPS
  
 
 INSTALLED_APPS = [
@@ -142,23 +142,23 @@ INSTALLED_APPS = [
 ]
 
 
-Templates in Django
-Used to handle dynamic HTML files separately.
+## Templates in Django
+### Used to handle dynamic HTML files separately.
 
-Configuring templates in settings.py
+#### Configuring templates in settings.py
 
 TEMPLATES = [
 {
 'BACKEND':  'django.template.backends.django.DjangoTemplates', 'DIRS': ["templates"],
 'APP_DIRS': True, 'OPTIONS': {
-# ... some options here ...
+##### ... some options here ...
 },
 },
 ]
 
 
-Changing the views.py file
-A view is associated with every template file. This view is responsible for displaying the content from the template.
+#### Changing the views.py file
+##### A view is associated with every template file. This view is responsible for displaying the content from the template.
 
 
 def index(request):
@@ -166,7 +166,7 @@ return render(request, 'index.html') ; #render is used to return the templat
 
 
 
-Sample template file
+## Sample template file
 
 <!DOCTYPE html>
 <html lang="en">
@@ -181,76 +181,39 @@ Sample template file
 </html>
 
 
-Migrations in Django
-Migrations are Django's way of updating the database schema according to the changes that you make to your models.
+## Migrations in Django
+### Migrations are Django's way of updating the database schema according to the changes that you make to your models.
 
-Creating a migration
-The below command is used to make migration but no changes are made to the actual database.
+### Creating a migration
+#### The below command is used to make migration but no changes are made to the actual database.
 
 python  manage.py  makemigrations
 
 
-Applying the migration
-The below command is used to apply the changes to the actual database.
+### Applying the migration
+#### The below command is used to apply the changes to the actual database.
 
 python  manage.py  migrate
 
 
-Admin interface in Django
-Django comes with a ready-to-use admin interface.
+## Admin interface in Django
+### Django comes with a ready-to-use admin interface.
 
-Creating the admin user
+#### Creating the admin user
 
 python  manage.py  createsuperuser
 
 
-Page Redirection
-Redirection is used to redirect the user to a specific page of the application on the occurrence of an event.
+### Page Redirection
+#### Redirection is used to redirect the user to a specific page of the application on the occurrence of an event.
 
-Redirect method
+### Redirect method
  
 
 from django.shortcuts import render, redirect
 
 def redirecting(request):
-return redirect("https://www.codewithharry.com")
+return redirect("https:momenurmaruf2742.github.io")
 
 
-### Languages and Tools: 🔥
-
-- **Languages**: 
-
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/unnamed.png" style="max-width:100%;"></code> 
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/Java.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/JavaScript.png" style="max-width:100%;"></code>
-
-- **Back-end**
-
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/Dj.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/joblib.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/numpy.png" style="max-width:100%;"></code>
-
-- **Front-end**
-
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/download.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/jquery.jpg" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/bootstrap-icons.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/materialize-css-tutorial.png" style="max-width:100%;"></code>
-
-- **Databases**  
-
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/Postgresql.svg.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/sql.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/mysql.jpg" style="max-width:100%;"></code>
-
-- **Cloud & Open Source**  
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/github-mark.png" style="max-width:100%;"></code>
- 
-
-- **Tools**
-
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/pc.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/vs.png" style="max-width:100%;"></code>
-  <code><img height="30" src="https://github.com/momenurmaruf2742/momenurmaruf2742/blob/master/Maruf_Assest/code%20block%20logo.jpg" style="max-width:100%;"></code>
-
-![Maruf's github stats](https://github-readme-stats.vercel.app/api?username=momenurmaruf2742&show_icons=true&theme=merko)
+### Star me on [github] 🔥✨
