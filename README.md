@@ -67,7 +67,7 @@ return  HttpResponse(''Django  Momenur Islam  Cheatsheet'')
 ## Sample HTML Template
 ### A sample .html file that contains HTML, CSS and Javascript.
 
-<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -79,6 +79,8 @@ return  HttpResponse(''Django  Momenur Islam  Cheatsheet'')
 <h1>This  is  a  sample  template  file.</h1>
 </body>
 </html>
+```
+
 
 
 ## Views in Django
@@ -168,6 +170,7 @@ return render(request, 'index.html') ; #render is used to return the templat
 
 ## Sample template file
 
+```
 <!DOCTYPE html>
 <html lang="en">
  
@@ -179,6 +182,7 @@ return render(request, 'index.html') ; #render is used to return the templat
 <h1>This  is  a  sample  django  template.</h1>
 </body>
 </html>
+```
 
 
 ## Migrations in Django
