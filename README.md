@@ -224,6 +224,7 @@ return redirect("https:momenurmaruf2742.github.io")
 #### Checking Django version:
 ```
 python -m django --version
+django-admin --version
 ```
 
 ### Star me on [github] 🔥✨
