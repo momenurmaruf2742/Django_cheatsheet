@@ -242,9 +242,10 @@ apt-get install python3-venv
 mkdir your_suite_name
 ```
 After it, change directory to the newly created directory by using the ```cd your_suite_name```
+
 3. Create Virtual Environment
 ``` 
-python3 -m venv djangoenv  
+python3 -m venv your_suite_name  
 ```
 4. Activate Virtual Environment
 After creating a virtual environment, activate it by using the following command.
