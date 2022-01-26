@@ -248,7 +248,11 @@ After it, change directory to the newly created directory by using the ```cd you
 python3 -m venv your_suite_name  
 ```
 4. Activate Virtual Environment
+
 After creating a virtual environment, activate it by using the following command.
-```source your_suite_name/bin/activate```
+
+```
+source your_suite_name/bin/activate
+```
 
 ### Star me on [github] 🔥✨
