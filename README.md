@@ -221,12 +221,13 @@ from django.shortcuts import render, redirect
 def redirecting(request):
 return redirect("https:momenurmaruf2742.github.io")
 ```
-#### Checking Django version:
-```
-python -m django --version
-django-admin --version
-```
-#### Requirements freezeing
-```pip freeze > requirements. txt```
+### Other needs 
+ #### Checking Django version:
+ ```
+ python -m django --version
+ django-admin --version
+ ```
+ #### Requirements freezeing
+ ```pip freeze > requirements. txt```
 
 ### Star me on [github] 🔥✨
