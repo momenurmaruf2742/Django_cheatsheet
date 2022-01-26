@@ -222,12 +222,31 @@ def redirecting(request):
 return redirect("https:momenurmaruf2742.github.io")
 ```
 ### Other needs 
- #### Checking Django version:
- ```
- python -m django --version
- django-admin --version
- ```
- #### Requirements freezeing
- ```pip freeze > requirements. txt```
+#### Checking Django version:
+```
+python -m django --version
+django-admin --version
+```
+#### Requirements freezeing
+```
+pip freeze > requirements. txt
+```
+#### Django Virtual Environment Setup
+1. Install Package
+First, install python3-venv package by using the following command.
+```
+apt-get install python3-venv  
+```
+2. Create a Directory
+```
+mkdir your_suite_name
+```
+After it, change directory to the newly created directory by using the ```cd your_suite_name```
+3. Create Virtual Environment
+``` python3 -m venv djangoenv  
+```
+4. Activate Virtual Environment
+After creating a virtual environment, activate it by using the following command.
+```source your_suite_name/bin/activate```
 
 ### Star me on [github] 🔥✨
