@@ -226,5 +226,7 @@ return redirect("https:momenurmaruf2742.github.io")
 python -m django --version
 django-admin --version
 ```
+#### Requirements freezeing
+```pip freeze > requirements. txt```
 
 ### Star me on [github] 🔥✨
