@@ -253,6 +253,8 @@ After creating a virtual environment, activate it by using the following command
 
 ```
 source your_suite_name/bin/activate
+
+source /home/momenur/Documents/django_projects/blog2/iCoder/myprojectenv/bin/activate
 ```
 
 ### Star me on [github] 🔥✨
